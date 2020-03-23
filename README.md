@@ -23,4 +23,8 @@ STEP 2) Install required libraries
 ```
 python install -r requirements.txt
 ```
-STEP 3) 
+STEP XX) Test if elasticsearch index can be queried
+```
+curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
+```
+
