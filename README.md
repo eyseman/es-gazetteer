@@ -9,8 +9,18 @@ This repository is a modified mirror copy of [es-geonames](https://github.com/op
 - added multi-threading support to the import script to increase speed
 
 ### INSTALLATION AND REQUIREMENTS
-1) Download the source code from Github
+*STEP 0) OPTIONAL - Setup Python "Virtual Environment"*
+```
+python3 -m venv es-gazetteer_env
+source es-gazetteer_env/bin/activate
+```
+STEP 1) Download the source code from Github
 ```
 git clone https://github.com/eyseman/es-gazetteer
 cd es-gazetteer
 ```
+STEP 2) Install required libraries
+```
+python install -r requirements.txt
+```
+STEP 3) 
