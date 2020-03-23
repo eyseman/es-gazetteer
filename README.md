@@ -32,6 +32,11 @@ STEP 4) Initialise docker container
 ```
 docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --name es-gazetteer -v gdata/:/usr/share/elasticsearch/data elasticsearch:7.6.1
 ```
+STEP 5) Download and extract country data from Geonames
+```
+wget http://download.geonames.org/export/dump/allCountries.zip
+unzip allCountries.zip
+```
 STEP XX) Test if elasticsearch index can be queried
 ```
 curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
