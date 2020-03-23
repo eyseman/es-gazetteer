@@ -4,7 +4,7 @@
 
 *Major modifications*
 - elevated elasticsearch to v7.6.1
-- modified index to provide compatibility with elasticsearch v7
+- modified index mapping to provide compatibility with elasticsearch v7
 - added multi-threading support to the import script to increase speed
 
 # SETUP
