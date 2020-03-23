@@ -1,6 +1,6 @@
-csv
-time
-multiprocessing
+wheel
+python-csv
+multiprocess
 elasticsearch
 tqdm
 datetime
