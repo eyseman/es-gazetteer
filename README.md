@@ -37,6 +37,10 @@ STEP 5) Download and extract country data from Geonames
 wget http://download.geonames.org/export/dump/allCountries.zip
 unzip allCountries.zip
 ```
+STEP 6) Create index for Geonames data in elasticsearch
+```
+curl -XPUT 'localhost:9200/geonames' -H 'Content-Type: application/json' -d @geonames_mapping.json
+```
 STEP XX) Test if elasticsearch index can be queried
 ```
 curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
