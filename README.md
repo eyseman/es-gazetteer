@@ -45,7 +45,7 @@ STEP 7) Import Geonames data from allCountries.txt
 ```
 python es-importer.py
 ```
-STEP XX) Test if elasticsearch index can be queried
+STEP 8) Test if elasticsearch index can be queried
 ```
 curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
 ```
