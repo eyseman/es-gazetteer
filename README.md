@@ -30,7 +30,7 @@ sudo chmod 777
 ```
 STEP 4) Initialise docker container
 ```
-docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --name es-gazetteer --hostname elasticsearch --net elasticsearch -v gdata/:/usr/share/elasticsearch/data elasticsearch:7.6.1
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --name es-gazetteer --net elasticsearch --hostname 172.19.0.2 -v /data-mitras/gdata/:/usr/share/elasticsearch/data elasticsearch:7.6.1
 ```
 STEP 5) Download and extract country data from Geonames
 ```
