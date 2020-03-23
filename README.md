@@ -41,6 +41,10 @@ STEP 6) Create index for Geonames data in elasticsearch
 ```
 curl -XPUT 'localhost:9200/geonames' -H 'Content-Type: application/json' -d @geonames_mapping.json
 ```
+STEP 7) Import Geonames data from allCountries.txt
+```
+python es-importer.py
+```
 STEP XX) Test if elasticsearch index can be queried
 ```
 curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
