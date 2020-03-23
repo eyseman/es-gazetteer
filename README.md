@@ -23,6 +23,15 @@ STEP 2) Install required libraries
 ```
 python install -r requirements.txt
 ```
+STEP 3) Create directory for index data of elasticsearch to be placed
+```
+mkdir gdata
+sudo chmod 777
+```
+STEP 4) Initialise docker container
+```
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" --name es-gazetteer -v gdata/:/usr/share/elasticsearch/data elasticsearch:7.6.1
+```
 STEP XX) Test if elasticsearch index can be queried
 ```
 curl -X GET "http://localhost:9200/geonames/_search?q=name:PUT-LOCATION-NAME-HERE&pretty=true"
