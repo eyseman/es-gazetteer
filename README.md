@@ -6,6 +6,7 @@ This repository is a modified mirror copy of [es-geonames](https://github.com/op
 *Major modifications*
 - elevated elasticsearch to v7.6.1
 - modified index mapping to provide compatibility with elasticsearch v7
+- fixed an issue regarding utf-8 encoding during import of Geonames data
 - added multi-threading support to the import script to increase speed
 
 ### INSTALLATION AND REQUIREMENTS
